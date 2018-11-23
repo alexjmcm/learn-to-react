@@ -13,9 +13,15 @@ function Result() {
         <p> Congratulations you have completed the project successfully. 
             Please refer to the suggested todo projects below</p>
             <div>  <Link
+
+              to="/lesson/Page1"
+              className={
+                window.location.pathname === "/lesson/Page1"
+
               to="/lesson"
               className={
                 window.location.pathname === "/lesson"
+
                   ? "nav-link active"
                   : "nav-link"
               }
@@ -29,4 +35,6 @@ function Result() {
   );
 }
 
+
 export default Result;
+
