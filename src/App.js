@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Result from "./resultpage/resultpage";
+
 import Page1 from "./components/lesson/page1";
 import Page2 from "./components/lesson/page2";
 import Page3 from "./components/lesson/page3";
@@ -16,10 +17,12 @@ function App() {
         <Navbar />
         <Wrapper>
           <Route exact path="/Result" component={Result} />
+
           <Route exact path="/lesson/Page1" component={Page1} />
           <Route exact path="/lesson/Page2" component={Page2} />
           <Route exact path="/lesson/Page3" component={Page3} />
           <Route exact path="/lesson/Page4" component={Page4} />
+
         </Wrapper>
         <Footer />
       </div>
