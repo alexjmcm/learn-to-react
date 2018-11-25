@@ -1,11 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Result from "./resultpage/resultpage";
-
-import Page1 from "./components/lesson/page1";
-import Page2 from "./components/lesson/page2";
-import Page3 from "./components/lesson/page3";
-import Page4 from "./components/lesson/page4";
+import Dashboard from "./dashboardpage/dashboard"
+import Login from "./login/login"
+import Page1 from "./lesson/page1";
+import Page2 from "./lesson/page2";
+import Page3 from "./lesson/page3";
+import Page4 from "./lesson/page4";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
@@ -16,8 +17,9 @@ function App() {
       <div>
         <Navbar />
         <Wrapper>
+          <Route exact path="/Login" component={Login} />
           <Route exact path="/Result" component={Result} />
-
+          <Route exact path="/Dashboard" component={Dashboard} />
           <Route exact path="/lesson/Page1" component={Page1} />
           <Route exact path="/lesson/Page2" component={Page2} />
           <Route exact path="/lesson/Page3" component={Page3} />

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Container from "../components/Container";
 
 
-
 function Result() {
   return (
     <div>
@@ -17,7 +16,7 @@ function Result() {
               to="/lesson/Page1"
               className={
                 window.location.pathname === "/lesson/Page1"
-
+              }
               to="/lesson"
               className={
                 window.location.pathname === "/lesson"
