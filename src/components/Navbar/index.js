@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {Menu, Dropdown} from "semantic-ui-react"
+import { NavDropdown, MenuItem} from "react-bootstrap"
 import "./style.css";
 
 
@@ -27,22 +27,25 @@ function Navbar() {
             Dashboard
             </Link>
           </li>
-          <li className="nav-item navbar-item has-dropdown">
-            <Link
+          <li >
+          <Link
               to="/lesson"
-              className={window.location.pathname === "/lesson" ? "nav-link active" : "nav-link"}
+              className={
+                 window.location.pathname === "/lesson"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
             >
-          <Menu>
-             <Dropdown.Menu>
-
-<Dropdown.Item>Lesson 1</Dropdown.Item>
-<Dropdown.Item>Lesson 2</Dropdown.Item>
-<Dropdown.Item>Lesson 3</Dropdown.Item>
-<Dropdown.Item>Lesson 4</Dropdown.Item>
-             </Dropdown.Menu>
-         
-     </Menu>
-            </Link>
+            <NavDropdown eventKey={4} title="Lesson" href = "/lesson" id="basic-nav-dropdown">
+            <MenuItem eventKey={4.1}>Page 1</MenuItem>
+            <MenuItem eventKey={4.2}>Page 2</MenuItem>
+            <MenuItem eventKey={4.3}>Page 3</MenuItem>
+            <MenuItem eventKey={4.4}>Page 4</MenuItem>
+            <MenuItem divider />
+            <MenuItem eventKey={4.4}>Lesson</MenuItem>
+          </NavDropdown>
+           </Link>
+           
           </li>
           <li className="nav-item">
             <Link
