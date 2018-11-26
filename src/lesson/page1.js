@@ -1,72 +1,72 @@
 import React from "react";
 import Container from "../components/Container";
 import { Link } from "react-router-dom";
+import { Player } from 'video-react';
+ 
+
+
 
 function Page1() {
     return (
-      
         <div>
-           <Container style={{ marginTop: 30 }}>
-         
-                <article>
-                    <p> Stage 1 - Introduction - How to Create a React App</p>
-                    <p> Description 1:</p>
-                    <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
-                  
-                    Video 1 - Link: <a href="https://www.youtube.com"> youtube.com</a>
-                </article>
-                
-                <article>   
-                  <p> Description 2:</p>
-                  <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
-
-                  Video 2 - Link: <a href="https://www.youtube.com"> youtube.com</a>
-
-                </article> 
-
-                <article>
-                  <p> Description 3:</p>
-                  <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
-
-                  Video 3 - Link: <a href="https://www.youtube.com"> youtube.com</a>
-
-                </article> 
-                
-              <article>
-                <p> Description 4:</p>
-                <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
-                Video 4 - Link: <a href="https://www.youtube.com"> youtube.com</a>
-                </article>  
-           
-                <button onclick="location.href='./lesson-plan-2.html';"> Next Lesson</button>
           
-                <p> Lesson Plan Page</p>
-                  <div>  
-                  <Link
+          <Container style={{ marginTop: 30 }}>
+          
+            <p> Lesson Plan Page 1</p>
+            <article>
+            <p> Section 1 - How to Create a Github Repository</p>
+            <p> Go to www.github.com and login to your github acccount (or sign up). After login in you can click on "create repository" button</p>
+            <p> On the field "Repository Name" Name your repository (Example: clickygame). Click on the checkbox: "Initialize this repository with a README" and then click on the button "Create repository"
+            </p>
+            <Player>
+            <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+            </Player>
+            
+          
+
+            </article>
+            <article>
+            <p> Section 2 - How to Clone a Github Repository Into Your Local Computer</p>
+            <p> Now that you have your repository you should clone it to your own computer, you do that by:
+              1 - Clicking on the button "Clone or Download" and copying the link. 
+              2 - Go to the terminal and in the location that you want to clone the repository do "git clone [link]" (After doing that you should have the clickygame repository in your computer).
+            </p>
+            <Player>
+            <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+            </Player>
+
+            </article>
+            <article>
+            <p> Section 3 - How to create a react-app in the recently create local repository (Link to a video)</p>
+            <p>We will use npm to install the create-react-app command line interface (CLI) globally (-g).
+            Open up your terminal and run "npm install -g create-react-app"</p>
+            <p> Now that you have the CLI available for use, navigate to the parent directory that you would like to place the application within. Then, run "create-react-app clicklygame" </p>
+            <p> Run "Yarn Start" to start running the application</p>
+            <Player>
+            <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+            </Player>
+            </article>
+
+
+
+                <div>  <Link
                   to="Page2"
                   className={
-                  window.location.pathname === "lesson/Page2"
-                  ? "nav-link active"
-                  : "nav-link"
+                    window.location.pathname === "lesson/Page2"
+                      ? "nav-link active"
+                      : "nav-link"
                   }
-                  >
+                >
                   Go back to Lesson Page 2
-                  </Link>  
-                  </div>          
+                </Link>    </div>
+           
           </Container>
-      </div>
+           </div>
         
       );
     }
 
 export default Page1;
-
-
-
-
-
-             
-
 
                    
 
