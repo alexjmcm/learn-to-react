@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Container from "../components/Container";
-
+import "./style.css"
 
 function Result() {
   return (
-    <div>
+    <div className = "Result">
       
       <Container style={{ marginTop: 30 }}>
       

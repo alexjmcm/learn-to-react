@@ -37,12 +37,70 @@ function Navbar() {
               }
             >
             <NavDropdown eventKey={4} title="Lesson" href = "/lesson" id="basic-nav-dropdown">
-            <MenuItem eventKey={4.1}>Page 1</MenuItem>
-            <MenuItem eventKey={4.2}>Page 2</MenuItem>
-            <MenuItem eventKey={4.3}>Page 3</MenuItem>
-            <MenuItem eventKey={4.4}>Page 4</MenuItem>
+            <MenuItem eventKey={4.1}>
+            <Link
+              to="lesson/Page1"
+              className={
+                 window.location.pathname === "/lesson/Page1"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+            >
+            Page 1
+            </Link>
+            </MenuItem>
+            <MenuItem eventKey={4.2}>
+            <Link
+              to="lesson/Page2"
+              className={
+                 window.location.pathname === "/lesson/Page2"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+            >
+            Page 2
+            </Link>
+            </MenuItem>
+            <MenuItem eventKey={4.3}>
+            <Link
+              to="lesson/Page3"
+              className={
+                 window.location.pathname === "/lesson/Page3"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+            >
+            Page 3
+            </Link>
+            </MenuItem>
+            <MenuItem eventKey={4.4}>
+            <Link
+              to="lesson/Page4"
+              className={
+                 window.location.pathname === "/lesson/Page4"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+            >
+            Page 4
+            </Link>
+            
+            </MenuItem>
             <MenuItem divider />
-            <MenuItem eventKey={4.4}>Lesson</MenuItem>
+            <MenuItem eventKey={4.4}>
+            <Link
+              to="/lesson"
+              className={
+                 window.location.pathname === "/lesson"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+            >
+            Lesson
+            </Link>
+
+
+            </MenuItem>
           </NavDropdown>
            </Link>
            

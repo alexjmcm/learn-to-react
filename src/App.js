@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Result from "./resultpage/resultpage";
 import Dashboard from "./dashboardpage/dashboard"
 import Login from "./login/login"
+import Lesson from "./lesson/lesson"
 import Page1 from "./lesson/page1";
 import Page2 from "./lesson/page2";
 import Page3 from "./lesson/page3";
@@ -17,9 +18,10 @@ function App() {
       <div>
         <Navbar />
         <Wrapper>
-          <Route exact path="/Login" component={Login} />
+          <Route exact path="/" component={Login} />
           <Route exact path="/Result" component={Result} />
           <Route exact path="/Dashboard" component={Dashboard} />
+          <Route exact path="/lesson" component={Lesson} />
           <Route exact path="/lesson/Page1" component={Page1} />
           <Route exact path="/lesson/Page2" component={Page2} />
           <Route exact path="/lesson/Page3" component={Page3} />
