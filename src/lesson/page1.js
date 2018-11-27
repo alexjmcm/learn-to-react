@@ -1,12 +1,16 @@
 import React from "react";
 import Container from "../components/Container";
 import { Link } from "react-router-dom";
-import { Player } from 'video-react';
- 
+import { Player } from "video-react";
+
 
 
 
 function Page1() {
+
+
+
+
     return (
         <div>
           
@@ -17,9 +21,11 @@ function Page1() {
             <p> Section 1 - How to Create a Github Repository</p>
             <p> Go to www.github.com and login to your github acccount (or sign up). After login in you can click on "create repository" button</p>
             <p> On the field "Repository Name" Name your repository (Example: clickygame). Click on the checkbox: "Initialize this repository with a README" and then click on the button "Create repository"
-            </p>
+            </p>     
+           
+            
             <Player>
-            <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+            <source src="http://webm.land/media/I2Mj.webm" />
             </Player>
             
           
@@ -32,7 +38,7 @@ function Page1() {
               2 - Go to the terminal and in the location that you want to clone the repository do "git clone [link]" (After doing that you should have the clickygame repository in your computer).
             </p>
             <Player>
-            <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+            <source src="http://webm.land/media/RZvg.webm" />
             </Player>
 
             </article>
@@ -43,7 +49,7 @@ function Page1() {
             <p> Now that you have the CLI available for use, navigate to the parent directory that you would like to place the application within. Then, run "create-react-app clicklygame" </p>
             <p> Run "Yarn Start" to start running the application</p>
             <Player>
-            <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
+            <source src="http://webm.land/media/sSSX.webm" />
             </Player>
             </article>
 
