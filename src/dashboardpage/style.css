@@ -27,6 +27,7 @@
 }
 .circle-tile-description {
     text-transform: uppercase;
+    font-size: 20px
 }
 .circle-tile-footer {
     background-color: rgba(0, 0, 0, 0.1);
@@ -114,3 +115,6 @@
     color: rgba(255, 255, 255, 0.7);
 }
 
+.nav-link{
+    font-size: 20px
+}
