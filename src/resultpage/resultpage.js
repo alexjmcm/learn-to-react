@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Container from "../components/Container";
 import "./style.css"
-
+import image from "../components/images/resultpage-bg.png"
 function Result() {
   return (
     <div className = "Result">
@@ -27,7 +27,9 @@ function Result() {
             >
               Go back to Lesson Page
             </Link>    </div>
-       
+
+      <img className="large-image" src={image}></img>
+         
       </Container>
        </div>
     
