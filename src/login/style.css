@@ -1,0 +1,16 @@
+.label{
+    font-size:20px;
+    color:mediumblue
+
+}
+.input{
+    border: gainsboro 1px solid;
+    font-size: 20px;
+    margin:5px;
+    width:60%;
+}
+.submit{
+    font-size: 20px;
+    background-color:lightgreen;
+border-radius: 5px
+}
