@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Container from "../components/Container"
 import "./style.css";
-
+import image from "../components/images/dashboard-bg.png"
 
 function Dashboard() {
   return (
@@ -49,11 +49,12 @@ function Dashboard() {
             </Link>
      
 
-                 
+             <img className="large-image" src={image}></img>     
        
       </Container>
        </div>
-    
+   
+  
   );
 }
 
