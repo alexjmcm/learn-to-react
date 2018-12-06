@@ -18,7 +18,7 @@ function Page1() {
           <Container style={{ marginTop: 30 }}>
 
           <Panel><Panel.Heading>
-          <Panel.Title componentClass="h1"><p> Lesson Plan Page 1</p></Panel.Title>
+          <Panel.Title componentClass="h1"><p> Lesson Plan Page 1 - Introduction</p></Panel.Title>
             </Panel.Heading></Panel>
           <Panel>
             <Panel.Heading>
