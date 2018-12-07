@@ -11,6 +11,7 @@ import Page4 from "./lesson/page4";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
+import CodeM from "./codemirror/index"
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
           <Route exact path="/lesson/Page2" component={Page2} />
           <Route exact path="/lesson/Page3" component={Page3} />
           <Route exact path="/lesson/Page4" component={Page4} />
-
+          <Route exact path="/Codem" component={CodeM} />
         </Wrapper>
         <Footer />
       </div>
