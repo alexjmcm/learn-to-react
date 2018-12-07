@@ -13,7 +13,7 @@ function Result() {
         <p> Congratulations you have completed the project successfully.
 
             Please refer to the suggested todo projects below:</p>
-            <div>  <Link
+          <Link
 
               to="/lesson/Page1"
               className={
@@ -23,16 +23,21 @@ function Result() {
               className={
                 window.location.pathname === "/lesson"
 
-                  ? "nav-link active"
-                  : "nav-link"
+                  
               }
             >
 
-              Go back to Lesson Page
-              
-               </Link>    </div>
+                <div class="circle-tile ">
+                    <a href="#">
+                        <div class="circle-tile-heading green"><i class="fa fa-arrow-left fa-fw fa-3x"></i></div>
+                    </a>
+                    <div class="circle-tile-content green">
+                        <div class="circle-tile-description text-faded"> Go back to Lesson Page</div>
+                    </div>
+              </div>
+               </Link>    
 
-<Container style={{ marginTop: 30 }}>
+<div style={{ marginTop: 30 }}>
 
 <p>Websites to provide additional help:</p>
 <p><a href="https://www.freecodecamp.org/"> freeCodeCamp </a></p>
@@ -44,18 +49,21 @@ function Result() {
 <p><a href="https://www.youtube.com/watch?v=MhkGQAoc7bc"> REACT JS TUTORIAL #1 - Reactjs Javascript Introduction & Workspace Setup </a></p>
 
 <p><a href="https://www.youtube.com/watch?v=fd2Cayhez58"> REACT JS TUTORIAL #2 - Reactjs Javascript Introduction & Workspace Setup </a></p>
+</div>
 
-</Container>
 
-      <img className="large-image" src={image}></img>
+
+     <div className="large-image">
+                <img src={image}></img>
+              </div>
 
         
                    
             
  
       </Container>
-       </div>
-  
+
+  </div>
   
   );
 }
