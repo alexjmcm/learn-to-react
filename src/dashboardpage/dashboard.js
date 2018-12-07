@@ -17,10 +17,9 @@ function Dashboard() {
                   : "nav-link"
               }
             >
-             Lesson
              <div class="circle-tile ">
                     <a href="#">
-                        <div class="circle-tile-heading blue"><i class="fa fa-users fa-fw fa-3x"></i></div>
+                        <div class="circle-tile-heading blue"><i class="fa fa-book fa-fw fa-3x"></i></div>
                     </a>
                     <div class="circle-tile-content blue">
                         <div class="circle-tile-description text-faded"> Lessons</div>
@@ -36,7 +35,6 @@ function Dashboard() {
                   : "nav-link"
               }
             >
-              Result
               <div class="circle-tile ">
                     <a href="#">
                         <div class="circle-tile-heading red"><i class="fa fa-users fa-fw fa-3x"></i></div>
@@ -48,8 +46,10 @@ function Dashboard() {
                 </div>
             </Link>
      
-
-             <img className="large-image" src={image}></img>     
+              <div className="large-image">
+                <img src={image}></img>
+              </div>
+                 
        
       </Container>
        </div>
