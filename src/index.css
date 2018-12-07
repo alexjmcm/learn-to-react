@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+#root > div,
+div[data-reactroot] {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+img{
+  width: 100%
+}
+
+.large-image{
+  max-width: 500px;
+  padding-top: 60px;
+  margin:auto;
+}
+
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
+
