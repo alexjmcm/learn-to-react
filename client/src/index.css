@@ -17,5 +17,12 @@ img{
 }
 
 .large-image{
-  margin-top: 60px;
+  max-width: 500px;
+  padding-top: 60px;
+  margin:auto;
 }
+
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
+
