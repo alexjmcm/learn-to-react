@@ -13,26 +13,42 @@ import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 import CodeM from "./codemirror/index"
 
-function App() {
-  return (
-    <Router>
-      <div>
-        <Navbar />
-        <Wrapper>
-          <Route exact path="/" component={Login} />
-          <Route exact path="/Result" component={Result} />
-          <Route exact path="/Dashboard" component={Dashboard} />
-          <Route exact path="/lesson" component={Lesson} />
-          <Route exact path="/lesson/Page1" component={Page1} />
-          <Route exact path="/lesson/Page2" component={Page2} />
-          <Route exact path="/lesson/Page3" component={Page3} />
-          <Route exact path="/lesson/Page4" component={Page4} />
-          <Route exact path="/Codem" component={CodeM} />
-        </Wrapper>
-        <Footer />
-      </div>
-    </Router>
-  );
+class App extends React.Component {
+
+  selectBackgound(location) {
+
+    let image = "/images/1.jpg";
+    switch (location) {
+      case "/Result":
+        image = "/images/2.jpg";
+    }
+    return image;
+  }
+
+  render() {
+    console.log(this.props);
+    return (
+      <Router>
+        <div>
+          <Navbar />
+          <Wrapper>
+            <Route exact path="/" component={Login} />
+            <Route exact path="/Result" component={Result} />
+            <Route exact path="/Dashboard" component={Dashboard} />
+            <Route exact path="/lesson" component={Lesson} />
+            <Route exact path="/lesson/Page1" component={Page1} />
+            <Route exact path="/lesson/Page2" component={Page2} />
+            <Route exact path="/lesson/Page3" component={Page3} />
+            <Route exact path="/lesson/Page4" component={Page4} />
+            <Route exact path="/Codem" component={CodeM} />
+          </Wrapper>
+          <Footer />
+          <img alt="background" className="bg" src={this.selectBackgound(window.location.href)} />
+
+        </div>
+      </Router>
+    );  
+  }
 }
 
 export default App;

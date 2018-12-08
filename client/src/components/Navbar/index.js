@@ -10,7 +10,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
      
       <Link className="navbar-brand" to="/dashboard">
-      <a href="/dashboard"><img className="logo" src="https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png"/></a>
+      <a href="/dashboard"><img alt="logo" className="logo" src="https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png"/></a>
       </Link>
       
       <div>

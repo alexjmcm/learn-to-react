@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Container from "../components/Container";
 import "./style.css"
-import image from "../components/images/login-bg.png"
+// import image from "../components/images/login-bg.png"
 
 function Login() {
   return (
@@ -28,7 +28,7 @@ function Login() {
         <div class="control">
         <button class=" button submit is-info">Submit</button>
         </div>
-        <img className="large-image" src={image}></img>
+        
        
       </Container>
        </div>
