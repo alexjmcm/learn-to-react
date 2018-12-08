@@ -25,8 +25,8 @@ function Login() {
         </div>
         </div>
 
-        <div class="control">
-        <button class=" button submit is-info">Submit</button>
+        <div className="control">
+        <button className=" button submit is-info">Submit</button>
         </div>
         
        

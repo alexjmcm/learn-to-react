@@ -12,21 +12,12 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 import CodeM from "./codemirror/index"
+import BackgroundImage from "./components/BackgroundImage";
 
 class App extends React.Component {
 
-  selectBackgound(location) {
-
-    let image = "/images/1.jpg";
-    switch (location) {
-      case "/Result":
-        image = "/images/2.jpg";
-    }
-    return image;
-  }
 
   render() {
-    console.log(this.props);
     return (
       <Router>
         <div>
@@ -43,8 +34,7 @@ class App extends React.Component {
             <Route exact path="/Codem" component={CodeM} />
           </Wrapper>
           <Footer />
-          <img alt="background" className="bg" src={this.selectBackgound(window.location.href)} />
-
+          <BackgroundImage />
         </div>
       </Router>
     );  
