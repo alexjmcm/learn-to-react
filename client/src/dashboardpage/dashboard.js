@@ -7,7 +7,9 @@ import image from "../components/images/dashboard-bg.png"
 function Dashboard() {
   return (
     <div>
-      
+
+
+<img className='bg' src={'https://source.unsplash.com/'+this.state.x+'x'+this.state.y+'/?nature'} />
       <Container style={{ marginTop: 30 }}>
       <Link
               to="/Lesson"
@@ -60,3 +62,4 @@ function Dashboard() {
 
 
 export default Dashboard;
+
