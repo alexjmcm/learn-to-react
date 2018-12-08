@@ -13,20 +13,8 @@ function Result() {
         <p> Congratulations you have completed the project successfully.
 
             Please refer to the suggested todo projects below:</p>
-          <Link
-
-              to="/lesson/Page1"
-              className={
-                window.location.pathname === "/lesson/Page1"
-              }
-              to="/lesson"
-              className={
-                window.location.pathname === "/lesson"
-
-                  
-              }
-            >
-
+            <Link to="/lesson/Page1" className={window.location.pathname === "/lesson/Page1" } >Page 1</Link>
+            <Link to="/lesson" className={ window.location.pathname === "/lesson" } >Lesson 1</Link>
                 <div class="circle-tile ">
                     <a href="#">
                         <div class="circle-tile-heading green"><i class="fa fa-arrow-left fa-fw fa-3x"></i></div>
@@ -34,8 +22,7 @@ function Result() {
                     <div class="circle-tile-content green">
                         <div class="circle-tile-description text-faded"> Go back to Lesson Page</div>
                     </div>
-              </div>
-               </Link>    
+              </div> 
 
 <div style={{ marginTop: 30 }}>
 
@@ -50,18 +37,7 @@ function Result() {
 
 <p><a href="https://www.youtube.com/watch?v=fd2Cayhez58"> REACT JS TUTORIAL #2 - Reactjs Javascript Introduction & Workspace Setup </a></p>
 </div>
-
-
-
-     <div className="large-image">
-                <img src={image}></img>
-              </div>
-
-        
-                   
-            
- 
-      </Container>
+  </Container>
 
   </div>
   
