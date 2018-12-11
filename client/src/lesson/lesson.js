@@ -20,7 +20,7 @@ function Lesson() {
               }
             ><Panel>
             <Panel.Heading>
-      <Panel.Title componentClass="h3">Page 1</Panel.Title>
+      <Panel.Title componentClass="h3">Page 1 - Introduction</Panel.Title>
     </Panel.Heading>
     <Panel.Body><p> Section 1 - How to Create a Github Repository</p>
     <p> Section 2 - How to Clone a Github Repository Into Your Local Computer</p>
@@ -40,9 +40,12 @@ function Lesson() {
             >
            <Panel>
             <Panel.Heading>
-      <Panel.Title componentClass="h3">Page 2</Panel.Title>
+      <Panel.Title componentClass="h3">Page 2 - How to Create Components in React</Panel.Title>
     </Panel.Heading>
-    <Panel.Body>Panel content</Panel.Body>
+    <Panel.Body><p> Section 1 - How to Create the Card Component</p>
+    <p> Section 2 - How to Create the Header Component</p>
+    
+    <p> Section 3 - How to Create the Wrapper Component</p></Panel.Body>
   </Panel>
             </Link>
             <Link
@@ -55,9 +58,12 @@ function Lesson() {
             >
             <Panel>
             <Panel.Heading>
-      <Panel.Title componentClass="h3">Page 3</Panel.Title>
+      <Panel.Title componentClass="h3">Page 3 - How to Create the Functions for the clicky-game</Panel.Title>
     </Panel.Heading>
-    <Panel.Body>Panel content</Panel.Body>
+    <Panel.Body><p> Section 1 - How to create the cards.json file</p>
+    <p> Section 2 - How to Create the Render Function</p>
+    
+    <p> Section 3 - How to Create the clickCount Function</p></Panel.Body>
   </Panel>
             </Link>
             <Link
@@ -72,7 +78,7 @@ function Lesson() {
             <Panel.Heading>
       <Panel.Title componentClass="h3">Page 4</Panel.Title>
     </Panel.Heading>
-    <Panel.Body>Panel content</Panel.Body>
+    <Panel.Body></Panel.Body>
   </Panel>
             </Link>
                </div>
