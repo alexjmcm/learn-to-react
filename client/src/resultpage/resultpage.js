@@ -19,16 +19,11 @@ function Result() {
               className={
                 window.location.pathname === "/lesson/Page1"
               }
-              to="/lesson"
-              className={
-                window.location.pathname === "/lesson"
-
-                  
-              }
+            
             >
 
                 <div class="circle-tile ">
-                    <a href="#">
+                    <a href="/lesson">
                         <div class="circle-tile-heading green"><i class="fa fa-arrow-left fa-fw fa-3x"></i></div>
                     </a>
                     <div class="circle-tile-content green">
@@ -54,7 +49,7 @@ function Result() {
 
 
      <div className="large-image">
-                <img src={image}></img>
+                <img src={image} alt="resultpage"></img>
               </div>
 
         

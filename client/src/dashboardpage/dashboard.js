@@ -9,7 +9,7 @@ function Dashboard() {
     <div>
 
 
-<img className='bg' src={'https://source.unsplash.com/'+this.state.x+'x'+this.state.y+'/?nature'} />
+<img className='bg' src={'https://source.unsplash.com/'+this.state.x+'x'+this.state.y+'/?nature'} alt ="dashboardimg" />
       <Container style={{ marginTop: 30 }}>
       <Link
               to="/Lesson"
@@ -20,7 +20,7 @@ function Dashboard() {
               }
             >
              <div class="circle-tile ">
-                    <a href="#">
+                    <a href="/lesson">
                         <div class="circle-tile-heading blue"><i class="fa fa-book fa-fw fa-3x"></i></div>
                     </a>
                     <div class="circle-tile-content blue">
@@ -38,7 +38,7 @@ function Dashboard() {
               }
             >
               <div class="circle-tile ">
-                    <a href="#">
+                    <a href="/result">
                         <div class="circle-tile-heading red"><i class="fa fa-users fa-fw fa-3x"></i></div>
                     </a>
                     <div class="circle-tile-content red">
@@ -49,7 +49,7 @@ function Dashboard() {
             </Link>
      
               <div className="large-image">
-                <img src={image}></img>
+                <img src={image} alt = "dbimg"></img>
               </div>
                  
        
