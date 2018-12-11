@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
-import Register from "./register";
+//import Register from "./register";
 
 
 class login extends Component {
