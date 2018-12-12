@@ -28,7 +28,7 @@ return (
       <p> 5 - And now just follow the video instructions below to start coding on those files.</p>
    
     
-      <Player fluid={false} width={200}>
+      <Player>
       <source src="http://webm.land/media/r8LV.webm" />
       </Player>
     
@@ -45,7 +45,7 @@ return (
    
       <p> 1 - On the header Folder create the index.js file, the Header.js file and the Header.css file. </p>
       <p> 2 - And now just follow the video instructions below to start coding on those files.</p>
-      <Player fluid={false} width={200}>
+      <Player>
      <source src="http://webm.land/media/AreT.webm" />
      </Player>
 
@@ -60,7 +60,7 @@ return (
    
       <p> 1 - On the header Folder create the index.js file, the Wapper.js file and the Wrapper.css file. </p>
       <p> 2 - And now just follow the video instructions below to start coding on those files.</p>
-      <Player fluid={false} width={200}>
+      <Player>
      <source src="http://webm.land/media/MxEA.webm" />
      </Player>
      </article></Panel.Body>
