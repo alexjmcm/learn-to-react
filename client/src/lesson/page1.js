@@ -33,7 +33,7 @@ function Page1() {
        
         
           {/* <Player fluid={false} width={200}> */}
-          <Player fluid={false} width={800}>
+          <Player fluid={false} width={200}>
           <source src="http://webm.land/media/4X2L.webm" />
        
           </Player>
@@ -53,7 +53,7 @@ function Page1() {
            1 - Clicking on the button "Clone or Download" and copying the link.
            2 - Go to the terminal and in the location that you want to clone the repository do "git clone [link]" (After doing that you should have the clickygame repository in your computer).
          </p>
-         <Player fluid={false} width={800}>
+         <Player fluid={false} width={200}>
          <source src="http://webm.land/media/CN9u.webm" />
          </Player>
 
@@ -70,7 +70,7 @@ function Page1() {
          Open up your terminal and run "npm install -g create-react-app"</p>
          <p> Now that you have the CLI available for use, navigate to the parent directory that you would like to place the application within. Then, run "create-react-app clicklygame" </p>
          <p> Run "Yarn Start" to start running the application</p>
-         <Player fluid={false} width={800}>
+         <Player fluid={false} width={200}>
          <source src="http://webm.land/media/CN9u.webm" />
          </Player>
          </article></Panel.Body>

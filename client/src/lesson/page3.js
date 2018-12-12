@@ -26,7 +26,7 @@ return (
       <p> 3 - And now just follow the video instructions below to populate the Cards properties with the information that you want.</p>
   
    
-      <Player fluid={false} width={800}>
+      <Player fluid={false} width={200}>
       <source src="http://webm.land/media/0k2f.webm" />
       </Player>
    
@@ -56,7 +56,7 @@ return (
   
       <p> 1 - You will create a clickCount function that will be responsible for counting the clicks.</p>
       <p> 2 - And now just follow the video instructions below to start creating the clickCount function.</p>
-      <Player fluid={false} width={800}>
+      <Player fluid={false} width={200}>
      <source src="http://webm.land/media/ZCqo.webm" />
      </Player>
      </article></Panel.Body>
@@ -71,7 +71,7 @@ return (
   
       <p> 1 - You will create a gameOver function that will be responsible for finishing the game, sending a game over alert and reset the game.</p>
       <p> 2 - And now just follow the video instructions below to start creating the gameOver function.</p>
-      <Player fluid={false} width={800}>
+      <Player fluid={false} width={200}>
      <source src="http://webm.land/media/4wJ2.webm" />
      </Player>
      </article></Panel.Body>
