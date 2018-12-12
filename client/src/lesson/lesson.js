@@ -25,7 +25,7 @@ function Lesson() {
     <Panel.Body><p> Section 1 - How to Create a Github Repository</p>
     <p> Section 2 - How to Clone a Github Repository Into Your Local Computer</p>
     
-    <p> Section 3 - How to create a react-app in the recently create local repository (Link to a video)</p></Panel.Body>
+    <p> Section 3 - How to create a react-app in the recently create local repository</p></Panel.Body>
   </Panel>
             
             </Link>
@@ -65,22 +65,7 @@ function Lesson() {
     
     <p> Section 3 - How to Create the clickCount Function</p></Panel.Body>
   </Panel>
-            </Link>
-            <Link
-              to="lesson/Page4"
-              className={
-                 window.location.pathname === "/lesson/Page4"
-                  ? "nav-link active"
-                  : "nav-link"
-              }
-            >
-            <Panel>
-            <Panel.Heading>
-      <Panel.Title componentClass="h3">Page 4</Panel.Title>
-    </Panel.Heading>
-    <Panel.Body></Panel.Body>
-  </Panel>
-            </Link>
+            </Link>        
                </div>
        
       </Container>
