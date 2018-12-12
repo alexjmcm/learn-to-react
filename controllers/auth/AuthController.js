@@ -1,5 +1,5 @@
 // AuthController.js
-const db = require("../../models");
+const db = require('../../models/User');
 
 var jwt = require('jsonwebtoken');
 var bcrypt = require('bcryptjs');
@@ -9,15 +9,15 @@ var VerifyToken = require('./VerifyToken');
 module.exports ={
 
 Register: function(req, res) {
-  var hashedPassword = bcrypt.hashSync(req.body.password, 8);
-  
+  var hashedPassword = bcrypt.hashSync(req.body.password, 10);
+
     db.create({
-      name : req.body.Name,
+      name : req.body.name,
       email : req.body.email,
       password : hashedPassword
     },
     function (err, user) {
-
+console.log("created user", user)
       if (err){
         console.log(err);
         return res.status(500).send(err)
@@ -34,7 +34,7 @@ Register: function(req, res) {
 
 
  Me: function(req, res, next) {
-  User.findById(req.userId, { password: 0 }, function (err, user) {
+  db.findById(req.userId, { password: 0 }, function (err, user) {
     if (err) return res.status(500).send("There was a problem finding the user.");
     if (!user) return res.status(404).send("No user found.");
     
@@ -43,7 +43,9 @@ Register: function(req, res) {
 } ,VerifyToken,
 
  Login: function(req, res) {
-    User.findOne({ email: req.body.email }, function (err, user) {
+   
+    db.findOne({ email: req.body.email }, function (err, user) {
+      console.log(err,{user},req.body);
       if (err) return res.status(500).send('Error on the server.');
       if (!user) return res.status(404).send('No user found.');
       var passwordIsValid = bcrypt.compareSync(req.body.password, user.password);

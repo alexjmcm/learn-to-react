@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
+import API from "../utils/API";
 //import Register from "./register";
 
 
 class login extends Component {
   // Setting the component's initial state
   state = {
-    Name: "",
+    name: "",
     password: ""
   };
 
@@ -28,20 +29,23 @@ class login extends Component {
   handleFormSubmit = event => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     event.preventDefault();
-    if (!this.state.Name) {
-      alert("Fill out your  name please!");
-    } else if (this.state.password.length < 6) {
-      alert(
-        `Choose a more secure password ${this.state.Name}`
-      );
-    } else {
-      alert(`Hello ${this.state.Name}`);
-    }
+    // if (!this.state.name) {
+    //   alert("Fill out your  name please!");
+    // }  else {
+    //   alert(`Hello ${this.state.name}`);
+    // }
+API.login (
+  {
+    email: this.state.name,
+   password: this.state.password
+  }
+).then(res=>{
+console.log(res)
+    this.props.history.push('/dashboard')
 
-    this.setState({
-      Name: "",
-     password: ""
-    });
+
+})
+
   };
 
   render() {
@@ -51,11 +55,11 @@ class login extends Component {
        
         <form className="form">
           <input
-            value={this.state.Name}
-            name="Name"
+            value={this.state.name}
+            name="name"
             onChange={this.handleInputChange}
-            type="text"
-            placeholder="Name"
+            type="email"
+            placeholder="name"
           />
           
           <input
