@@ -50,7 +50,11 @@ if (!this.state.name === "" || !this.state.email === "" || !this.state.password 
            password:this.state.password,
            //password_confirmation:this.state.password_confirmation
        })
-       .then (res => this.loadUser())
+       .then (res => {this.loadUser()
+        this.props.history.push('/')
+      }
+    
+      )
        .catch(err => console.log(err));
          }       
   };
