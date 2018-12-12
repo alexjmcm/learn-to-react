@@ -7,7 +7,7 @@ import image from "../components/images/resultpage-bg.png"
 function Result() {
   return (
     <div className = "Result">
-      
+      <img className='bg' src={'https://source.unsplash.com/'+800+'x'+2000+'/?nature'}  />
       <Container style={{ marginTop: 30 }}>
       
         <p> Congratulations you have completed the project successfully.
