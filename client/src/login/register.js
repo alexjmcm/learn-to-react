@@ -12,7 +12,7 @@ import API from "../utils/API";
 class Register extends Component {
   // Setting the component's initial state
   state = {
-    Name: "",
+    name: "",
     email: "",
     password: "",
     password_confirmation: ""
@@ -25,7 +25,7 @@ class Register extends Component {
   loadUser = () => {
     API.getUser()
       .then(res =>
-        this.setState({ user: res.data, Name: "", email: "", password: "", password_confirmation:"" })
+        this.setState({ user: res.data, name: "", email: "", password: "", password_confirmation:"" })
       )
       .catch(err => console.log(err));
   };
@@ -40,12 +40,12 @@ class Register extends Component {
   handleFormSubmit = event =>{
     event.preventDefault();
     
-if (!this.state.Name === "" || !this.state.email === "" || !this.state.password === "" || !this.state.password_confirmation === "" ) {
+if (!this.state.name === "" || !this.state.email === "" || !this.state.password === "" || !this.state.password_confirmation === "" ) {
         alert("sorry, you must enter all fields")
         
       } else if(this.state.password === this.state.password_confirmation) { 
        API.saveUser({
-           Name:this.state.Name,
+           name:this.state.name,
            email:this.state.email,
            password:this.state.password,
            //password_confirmation:this.state.password_confirmation
@@ -62,11 +62,11 @@ if (!this.state.Name === "" || !this.state.email === "" || !this.state.password 
        
         <form className="form">
           <input
-            value={this.state.Name}
-            name="Name"
+            value={this.state.name}
+            name="name"
             onChange={this.handleInputChange}
             type="text"
-            placeholder="Name"
+            placeholder="name"
           />
           <input
             value={this.state.email}
