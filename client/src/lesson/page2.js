@@ -1,10 +1,10 @@
 import React from "react";
 import Container from "../components/Container";
 import { Link } from "react-router-dom";
-import { Player } from "video-react";
-import "./style.css";
-import { Panel } from "react-bootstrap";
+import "./style.css"
+import { Panel} from "react-bootstrap"
 import Navbar from "../components/Navbar";
+import YouTube from 'react-youtube';
 
 function Page2() {
 return (
@@ -28,9 +28,7 @@ return (
       <p> 5 - And now just follow the video instructions below to start coding on those files.</p>
    
     
-      <Player>
-      <source src="http://webm.land/media/r8LV.webm" />
-      </Player>
+      <YouTube videoId="4p88i2Tu4IQ" />
     
   
 
@@ -45,9 +43,7 @@ return (
    
       <p> 1 - On the header Folder create the index.js file, the Header.js file and the Header.css file. </p>
       <p> 2 - And now just follow the video instructions below to start coding on those files.</p>
-      <Player>
-     <source src="http://webm.land/media/AreT.webm" />
-     </Player>
+      <YouTube videoId="xW1C8oB2HK0" />
 
      </article></Panel.Body>
 </Panel>
@@ -60,9 +56,7 @@ return (
    
       <p> 1 - On the header Folder create the index.js file, the Wapper.js file and the Wrapper.css file. </p>
       <p> 2 - And now just follow the video instructions below to start coding on those files.</p>
-      <Player>
-     <source src="http://webm.land/media/MxEA.webm" />
-     </Player>
+      <YouTube videoId="PYzXUzcU3T4" />
      </article></Panel.Body>
 </Panel>
 
