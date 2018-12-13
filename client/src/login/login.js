@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 import API from "../utils/API";
-import Container from "../components/Container";
+
 import { Panel} from "react-bootstrap"
 //import Register from "./register";
 import image from "../components/images/login-background.jpg"

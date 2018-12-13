@@ -112,7 +112,7 @@ function Navbar() {
           <span class="glyphicon glyphicon-log-out"></span> Logout
         </a>
       </p> 
-           </div>
+          </div>
    </nav>
  );
 }
