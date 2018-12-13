@@ -102,6 +102,14 @@ function Navbar() {
              Result
            </Link>
          </li>
+         <li className="nav-item logout" >
+           <Link
+             to="/"
+             className={window.location.pathname === "/result" ? "nav-link active" : "nav-link"}
+           >
+             Logout
+           </Link>
+         </li>
        </ul>
      </div>
    </nav>

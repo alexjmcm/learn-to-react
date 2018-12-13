@@ -1,0 +1,28 @@
+.title{
+    border:10px;
+    color:#00d8ff;
+    font-size:35px;
+    
+}
+.logo{
+    margin: 0 150px 5px 0
+}
+  .form{
+    margin-top:40px;
+    border:4px black solid;
+    height:400px;
+    width:600px;
+    margin-bottom: 0
+}
+.form input {
+  display: block;
+  block-size: 40px;
+  width: 90%;
+  margin:0 0 5px 10px ;
+  font-size: 20px;
+}
+.form label{
+    
+    font-size: 20px;
+     margin:5px;
+}

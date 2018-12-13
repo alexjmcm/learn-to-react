@@ -25,4 +25,43 @@ border-radius: 5px
     margin-bottom: 5px;
     width: 100%;
   }
-  
+  p{
+      width:60%;
+      margin:0;
+  }
+.title{
+      border:10px;
+      color:#00d8ff;
+      font-size:35px;
+      
+  }
+  .logo{
+      margin: 0 150px 5px 0
+  }
+
+  .form1{
+      margin:70px 0 0 15px;
+      border:4px black solid;
+      height:220px;
+      width:500px;
+     
+  }
+  .form1 input {
+    display: block;
+    block-size: 40px;
+    width: 90%;
+    margin:0 10px 5px 10px ;
+    font-size: 20px;
+  }
+  .form1 label{
+      
+      font-size: 20px;
+       margin:5px;
+  }
+
+  button{
+    margin: 0 10px 0 10px;
+       height:30px;
+    width:70px;
+    font-size: 15px
+  }

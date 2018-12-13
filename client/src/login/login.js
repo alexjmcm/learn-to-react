@@ -5,7 +5,7 @@ import API from "../utils/API";
 import Container from "../components/Container";
 import { Panel} from "react-bootstrap"
 //import Register from "./register";
-
+import image from "../components/images/login-background.jpg"
 
 class login extends Component {
  // Setting the component's initial state
@@ -54,17 +54,24 @@ console.log(res)
    // Notice how each input has a `value`, `name`, and `onChange` prop
    return (
      <div>
-     
-       <form className="form">
-         <input
+      <img className='bg' src={image} alt = "loginbg" />
+      <Panel><Panel.Heading>
+        <Panel.Title componentClass="h1" className = "title"> 
+        <img className="logo" src="https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png" alt = "logo" />
+        
+        Learn to React By Building Fun Projects </Panel.Title>
+          </Panel.Heading></Panel>
+       <form className="form1">
+       <label> Email</label>
+         <input 
            value={this.state.name}
            name="name"
-           onChange={this.handleInputChange}
+            onChange={this.handleInputChange}
            type="email"
-           placeholder="name"
+           placeholder="Email"
          />
-        
-         <input
+         <label>Password</label>
+         <input 
            value={this.state.password}
            name="password"
            onChange={this.handleInputChange}
@@ -84,44 +91,12 @@ console.log(res)
                      : "nav-link"
                  }
                >
-                 Register For The Learn To React App!
+                 Register Here
                </Link>   
      </div>
 
    
 
- <div className = "Page1">
-      
-       <Container style={{ marginTop: 30 }}>
-
-       <Panel><Panel.Heading>
-       <Panel.Title componentClass="h1"><p> Learn-to-React Project Challenge: Clicky Game</p></Panel.Title>
-         </Panel.Heading></Panel>
-       <Panel>
-         <Panel.Heading>
-    <Panel.Title componentClass="h2"><p> How to Create a Clicky-Game React App - STEP BY STEP (Login to see the tutorial)</p></Panel.Title>
- </Panel.Heading>
- <Panel.Body><article>
-       
-         <p> For this project, you'll create a memory game with React. This project will require you to break up your application's UI into components, manage component state, and respond to user events.</p>
-         <p> Requirements:</p>
-         <p> 1 - The application should render different images (of your choice) to the screen. </p>
-         <p> 2 - Each image should listen for click events.</p>
-         <p> 3 - The application should keep track of the user's score. The user's score should be incremented when clicking an image for the first time.</p>
-         <p> 4 - The user's score should be reset to 0 if they click the same image more than once. </p>
-         <p> 5 - Every time an image is clicked, the images rendered to the page should shuffle themselves in a random order.</p>
-         <p> 6 - Once the user's score is reset after an incorrect guess, the game should restart. </p>
-
-      
-      
-     
-
-         </article></Panel.Body>
-</Panel>      
-  
-      
-       </Container>
-        </div>
 
 
 

@@ -2,13 +2,14 @@
 //import { Link } from "react-router-dom";
 //import Container from "../components/Container";
 //import "./style.css"
-//import image from "../components/"
+
 
 
 import React, { Component } from "react";
-import "./style.css";
+import "./style1.css";
 import API from "../utils/API";
-
+import image from "../components/images/login-background.jpg"
+import { Panel} from "react-bootstrap"
 class Register extends Component {
   // Setting the component's initial state
   state = {
@@ -63,15 +64,23 @@ if (!this.state.name === "" || !this.state.email === "" || !this.state.password 
     // Notice how each input has a `value`, `name`, and `onChange` prop
     return (
       <div>
-       
+         <img className='bg' src={image} alt = "registerbg" />
+         <Panel><Panel.Heading>
+        <Panel.Title componentClass="h1" className = "title"> 
+        <img className="logo" src="https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png" alt = "logo" />
+        
+        Learn to React By Building Fun Projects </Panel.Title>
+          </Panel.Heading></Panel>
         <form className="form">
+        <label>Name</label>
           <input
             value={this.state.name}
             name="name"
             onChange={this.handleInputChange}
             type="text"
-            placeholder="name"
+            placeholder="Name"
           />
+          <label>Email</label>
           <input
             value={this.state.email}
             name="email"
@@ -79,6 +88,7 @@ if (!this.state.name === "" || !this.state.email === "" || !this.state.password 
             type="text"
             placeholder="Email"
           />
+           <label>Password</label>
           <input
             value={this.state.password}
             name="password"
@@ -86,12 +96,13 @@ if (!this.state.name === "" || !this.state.email === "" || !this.state.password 
             type="password"
             placeholder="Password"
           />
+           <label> Confirm Password</label>
            <input
             value={this.state.password_confirmation}
             name="password_confirmation"
             onChange={this.handleInputChange}
             type="password"
-            placeholder="Password Confirmation"
+            placeholder="Confirm Password"
           />
           <button onClick={this.handleFormSubmit}>Submit</button>
           </form>

@@ -17,26 +17,20 @@ function App() {
  return (
    <Router>
      <div>
-<<<<<<< HEAD
        
        <Wrapper>
          <Route exact path="/" component={Login} />
          <Route exact path="/Register" component={Register} />
-=======
-     <Route exact path="/Register" component={Register} />
-     <Route exact path="/" component={Login} />
-       <Navbar />
-       <Wrapper>   
->>>>>>> 8f22e5c6db63e232de51820bd84fcb10ce532bc6
          <Route exact path="/Result" component={Result} />
          <Route exact path="/Dashboard" component={Dashboard} />
          <Route exact path="/lesson" component={Lesson} />
          <Route exact path="/lesson/Page1" component={Page1} />
          <Route exact path="/lesson/Page2" component={Page2} />
          <Route exact path="/lesson/Page3" component={Page3} />       
-         <Route exact path="/Codem" component={CodeM} />       
+         <Route exact path="/Codem" component={CodeM} />   
+         <Footer />    
        </Wrapper>
-       <Footer />
+       
      </div>
    </Router>
  );
