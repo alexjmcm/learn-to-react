@@ -3,25 +3,16 @@ import Container from "../components/Container";
 import { Link } from "react-router-dom";
 import "./style.css"
 import { Panel} from "react-bootstrap"
-<<<<<<< HEAD
 
 import Navbar from "../components/Navbar";
 import YouTube from 'react-youtube';
 
 
-=======
-import Navbar from "../components/Navbar";
-import YouTube from 'react-youtube';
->>>>>>> 24de45f9906dad387f2661593f5c4640adbcbb05
 
 function Page1() {
-
-
-
-<Navbar />
   return (
       <div className = "Page1">
-      
+      <Navbar />
         <Container style={{ marginTop: 30 }}>
 
         <Panel><Panel.Heading>
@@ -74,16 +65,16 @@ function Page1() {
          </article></Panel.Body>
 </Panel>
        
-              <div>  <Link
-                to="Page2"
+                <Link
+                to="/Page2"
                 className={
-                  window.location.pathname === "lesson/Page2"
+                  window.location.pathname === "/Page2"
                     ? "nav-link active"
                     : "nav-link"
                 }
               >
                 Go back to Lesson Page 2
-              </Link>    </div>
+              </Link>   
        
         </Container>
          </div>

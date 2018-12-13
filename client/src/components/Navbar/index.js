@@ -101,42 +101,23 @@ function Navbar() {
            >
              Result
            </Link>
-<<<<<<< HEAD
          </li>
-         <li className="nav-item logout" >
-           <Link
-             to="/"
-             className={window.location.pathname === "/result" ? "nav-link active" : "nav-link"}
-           >
-             Logout
-           </Link>
-         </li>
+         
        </ul>
+       
      </div>
+     <div >
+     <p>
+        <a href="/" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-log-out"></span> Logout
+        </a>
+      </p> 
+           </div>
    </nav>
  );
 }
-=======
->>>>>>> 24de45f9906dad387f2661593f5c4640adbcbb05
 
-                    
-
-<Link
-  to="/"
-  className={
-     window.location.pathname === "/"
-      ? "nav-link active"
-      : "nav-link"
-  }
->
-Logout
-</Link>
-</li>
-</ul>
-</div>
-</nav>
-);
-}
+ 
        
 
 export default Navbar;

@@ -1,8 +1,9 @@
-nav.navbar {
+.navbar-nav {
   margin-bottom: 0;
    font-size: 20px ;
    height:80px;
    width:100%;
+   color:#00d8ff
    
   }
   .logo{
@@ -10,11 +11,17 @@ nav.navbar {
    
   }
  
-{
-  box-sizing: border-box;
+.btn{
+ float:right;
+ margin-left: 1100px;
+ height:40px;
+ font-size:20px;
+ background-color: #00d8ff
 }
-
-  .box.logout {
-      float: right;
-
+.glyphicon{
+  font-size:30px;
+ 
+}
+div.ul.li.a.nav-link{
+  color:#00d8ff
 }
