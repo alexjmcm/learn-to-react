@@ -9,7 +9,7 @@ import Page1 from "./lesson/page1";
 import Page2 from "./lesson/page2";
 import Page3 from "./lesson/page3";
 import Page4 from "./lesson/page4";
-import Navbar from "./components/Navbar";
+
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 import CodeM from "./codemirror/index"
@@ -18,7 +18,7 @@ function App() {
   return (
     <Router>
       <div>
-        <Navbar />
+        
         <Wrapper>
           <Route exact path="/" component={Login} />
           <Route exact path="/Register" component={Register} />

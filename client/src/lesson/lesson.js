@@ -3,14 +3,15 @@ import { Link } from "react-router-dom";
 import Container from "../components/Container";
 import "./style.css"
 import { Panel} from "react-bootstrap"
+import Navbar from "../components/Navbar";
 
 function Lesson() {
   return (
     <div>
-      
-      <Container style={{ marginTop: 30 }}>
-      
+       <Navbar />
        
+      <Container style={{ marginTop: 30 }}>
+     
             <div className = "lesson">  <Link
               to="lesson/Page1"
               className={

@@ -1,11 +1,12 @@
 import React from "react";
 import Container from "../components/Container";
 import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 function Page4() {
     return (
         <div>
-          
+          <Navbar />
           <Container style={{ marginTop: 30 }}>
           
             <p> Lesson Plan Page 4</p>

@@ -3,13 +3,15 @@ import { Link } from "react-router-dom";
 import Container from "../components/Container";
 import "./style.css"
 import image from "../components/images/resultpage-bg.png"
+import Navbar from "../components/Navbar";
 
 function Result() {
   return (
     <div className = "Result">
       <img className='bg' src={'https://source.unsplash.com/'+800+'x'+2000+'/?nature'}  />
+      <Navbar />
       <Container style={{ marginTop: 30 }}>
-      
+     
         <p> Congratulations you have completed the project successfully.
 
             Please refer to the suggested todo projects below:</p>
