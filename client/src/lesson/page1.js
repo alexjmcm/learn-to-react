@@ -33,7 +33,7 @@ function Page1() {
        
         
           {/* <Player fluid={false} width={200}> */}
-          <Player fluid={true}>
+          <Player fluid={false}>
           <source src="http://webm.land/media/4X2L.webm" />
        
           </Player>
