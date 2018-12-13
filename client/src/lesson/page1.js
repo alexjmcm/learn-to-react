@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Player } from "video-react";
 import "./style.css"
 import { Panel} from "react-bootstrap"
-
+import YouTube from 'react-youtube';
 
 
 function Page1() {
@@ -31,9 +31,19 @@ function Page1() {
           <p> On the field "Repository Name" Name your repository (Example: clickygame). Click on the checkbox: "Initialize this repository with a README" and then click on the button "Create repository"
           </p>   
        
+          <YouTube
+        videoId="senbTLxzsSY"
+   
+      />
+    );
+  }
+
+
+
+       
         
-          {/* <Player fluid={false} width={200}> */}
-          <Player fluid={false}>
+          <Player fluid={false} width={200}>
+          {/* <Player fluid={false}> */}
           <source src="http://webm.land/media/4X2L.webm" />
        
           </Player>

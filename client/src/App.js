@@ -17,10 +17,10 @@ function App() {
  return (
    <Router>
      <div>
+     <Route exact path="/Register" component={Register} />
+     <Route exact path="/" component={Login} />
        <Navbar />
-       <Wrapper>
-         <Route exact path="/" component={Login} />
-         <Route exact path="/Register" component={Register} />
+       <Wrapper>   
          <Route exact path="/Result" component={Result} />
          <Route exact path="/Dashboard" component={Dashboard} />
          <Route exact path="/lesson" component={Lesson} />
