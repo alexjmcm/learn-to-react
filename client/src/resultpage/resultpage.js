@@ -8,7 +8,11 @@ import Navbar from "../components/Navbar";
 function Result() {
   return (
     <div className = "Result">
+<<<<<<< HEAD
      
+=======
+    
+>>>>>>> 24de45f9906dad387f2661593f5c4640adbcbb05
       <Navbar />
       <Container style={{ marginTop: 30 }}>
       

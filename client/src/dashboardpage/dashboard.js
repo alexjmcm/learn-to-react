@@ -8,6 +8,11 @@ function Dashboard() {
   return (
     <div>
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 24de45f9906dad387f2661593f5c4640adbcbb05
 <Navbar />
       <Container style={{ marginTop: 30 }}>
       <Link

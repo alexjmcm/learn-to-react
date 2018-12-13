@@ -1,14 +1,18 @@
 import React from "react";
 import Container from "../components/Container";
 import { Link } from "react-router-dom";
-import { Player } from "video-react";
 import "./style.css"
 import { Panel} from "react-bootstrap"
+<<<<<<< HEAD
 
 import Navbar from "../components/Navbar";
 import YouTube from 'react-youtube';
 
 
+=======
+import Navbar from "../components/Navbar";
+import YouTube from 'react-youtube';
+>>>>>>> 24de45f9906dad387f2661593f5c4640adbcbb05
 
 function Page1() {
 
@@ -34,25 +38,8 @@ function Page1() {
           <p> On the field "Repository Name" Name your repository (Example: clickygame). Click on the checkbox: "Initialize this repository with a README" and then click on the button "Create repository"
           </p>   
        
-          <YouTube
-        videoId="senbTLxzsSY"
-   
-      />
-    );
-  }
-
-
-
-       
+          <YouTube videoId="rNxWL7aML5I" />        
         
-          <Player fluid={false} width={200}>
-          {/* <Player fluid={false}> */}
-          <source src="http://webm.land/media/4X2L.webm" />
-       
-          </Player>
-        
-      
-
           </article></Panel.Body>
 </Panel>
        
@@ -66,9 +53,8 @@ function Page1() {
            1 - Clicking on the button "Clone or Download" and copying the link.
            2 - Go to the terminal and in the location that you want to clone the repository do "git clone [link]" (After doing that you should have the clickygame repository in your computer).
          </p>
-         <Player>
-         <source src="http://webm.land/media/CN9u.webm" />
-         </Player>
+         
+         <YouTube videoId="3vgIppUiX7I" />
 
          </article></Panel.Body>
 </Panel>
@@ -83,9 +69,8 @@ function Page1() {
          Open up your terminal and run "npm install -g create-react-app"</p>
          <p> Now that you have the CLI available for use, navigate to the parent directory that you would like to place the application within. Then, run "create-react-app clicklygame" </p>
          <p> Run "Yarn Start" to start running the application</p>
-         <Player>
-         <source src="http://webm.land/media/CN9u.webm" />
-         </Player>
+         
+         <YouTube videoId="WP6QHeGmijo" />
          </article></Panel.Body>
 </Panel>
        

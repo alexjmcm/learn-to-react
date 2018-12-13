@@ -10,4 +10,11 @@ nav.navbar {
    
   }
  
+{
+  box-sizing: border-box;
+}
 
+  .box.logout {
+      float: right;
+
+}
