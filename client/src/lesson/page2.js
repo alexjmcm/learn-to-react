@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import { Player } from "video-react";
 import "./style.css";
 import { Panel } from "react-bootstrap";
-
+import Navbar from "../components/Navbar";
 
 function Page2() {
 return (
   <div className = "Page1">
-  
+  <Navbar />
     <Container style={{ marginTop: 30 }}>
 
     <Panel><Panel.Heading>

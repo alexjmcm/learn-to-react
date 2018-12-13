@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import Container from "../components/Container"
 import "./style.css";
 import image from "../components/images/dashboard-bg.png"
-
+import Navbar from "../components/Navbar";
 function Dashboard() {
   return (
     <div>
 
 
 <img className='bg' src={'https://source.unsplash.com/'+800+'x'+500+'/?computer'}  />
+<Navbar />
       <Container style={{ marginTop: 30 }}>
       <Link
               to="/Lesson"

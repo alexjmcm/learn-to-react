@@ -1,6 +1,9 @@
 nav.navbar {
   margin-bottom: 0;
-   font-size: 20px 
+   font-size: 20px ;
+   height:80px;
+   width:100%;
+   
   }
   .logo{
     width: 150px;
