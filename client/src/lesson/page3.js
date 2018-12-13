@@ -1,10 +1,10 @@
 import React from "react";
 import Container from "../components/Container";
 import { Link } from "react-router-dom";
-import { Player } from "video-react";
-import "./style.css";
-import { Panel } from "react-bootstrap";
+import "./style.css"
+import { Panel} from "react-bootstrap"
 import Navbar from "../components/Navbar";
+import YouTube from 'react-youtube';
 
 
 function Page3() {
@@ -26,9 +26,7 @@ return (
       <p> 3 - And now just follow the video instructions below to populate the Cards properties with the information that you want.</p>
   
    
-      <Player>
-      <source src="http://webm.land/media/0k2f.webm" />
-      </Player>
+      <YouTube videoId="kpFVXEV1z5g" />
    
  
       </article></Panel.Body>
@@ -42,9 +40,7 @@ return (
   
       <p> 1 - You will create a render function to render all the cards using the Card, Header and Wrapper Components and the card.json file.</p>
       <p> 2 - And now just follow the video instructions below to start creating the render function.</p>
-      <Player fluid={true}>
-     <source src="http://webm.land/media/hAQ9.webm" />
-     </Player>
+      <YouTube videoId="bwWDR36MP8o" />
      </article></Panel.Body>
 </Panel>
    
@@ -56,9 +52,7 @@ return (
   
       <p> 1 - You will create a clickCount function that will be responsible for counting the clicks.</p>
       <p> 2 - And now just follow the video instructions below to start creating the clickCount function.</p>
-      <Player>
-     <source src="http://webm.land/media/ZCqo.webm" />
-     </Player>
+      <YouTube videoId="e4bdqs1GPWc" />
      </article></Panel.Body>
 </Panel>
 
@@ -71,9 +65,7 @@ return (
   
       <p> 1 - You will create a gameOver function that will be responsible for finishing the game, sending a game over alert and reset the game.</p>
       <p> 2 - And now just follow the video instructions below to start creating the gameOver function.</p>
-      <Player>
-     <source src="http://webm.land/media/4wJ2.webm" />
-     </Player>
+      <YouTube videoId="1Bw752AePSg" />
      </article></Panel.Body>
 </Panel>
 
