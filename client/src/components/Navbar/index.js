@@ -36,7 +36,7 @@ function Navbar() {
                  : "nav-link"
              }
            >
-           <NavDropdown eventKey={4} title="Lesson" href = "/lesson" id="basic-nav-dropdown">
+           <NavDropdown eventKey={4} title="Lesson" href = "/lesson/Page1" id="basic-nav-dropdown">
            <MenuItem eventKey={4.1}>
            <Link
              to="lesson/Page1"
