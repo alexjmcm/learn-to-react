@@ -101,13 +101,26 @@ function Navbar() {
            >
              Result
            </Link>
-         </li>
-       </ul>
-     </div>
-   </nav>
- );
-}
 
+                    
+
+<Link
+  to="/"
+  className={
+     window.location.pathname === "/"
+      ? "nav-link active"
+      : "nav-link"
+  }
+>
+Logout
+</Link>
+</li>
+</ul>
+</div>
+</nav>
+);
+}
+       
 
 export default Navbar;
 

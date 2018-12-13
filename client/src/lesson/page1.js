@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import { Player } from "video-react";
 import "./style.css"
 import { Panel} from "react-bootstrap"
-<<<<<<< HEAD
+
 import Navbar from "../components/Navbar";
-=======
+
 import YouTube from 'react-youtube';
->>>>>>> 8f22e5c6db63e232de51820bd84fcb10ce532bc6
+
 
 
 function Page1() {

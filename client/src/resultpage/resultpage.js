@@ -8,7 +8,7 @@ import Navbar from "../components/Navbar";
 function Result() {
   return (
     <div className = "Result">
-      <img className='bg' src={'https://source.unsplash.com/'+800+'x'+2000+'/?nature'}  />
+    
       <Navbar />
       <Container style={{ marginTop: 30 }}>
       
