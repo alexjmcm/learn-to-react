@@ -9,7 +9,7 @@ function Dashboard() {
     <div>
 
 
-<img className='bg' src={'https://source.unsplash.com/'+800+'x'+500+'/?nature'}  />
+<img className='bg' src={'https://source.unsplash.com/'+800+'x'+500+'/?computer'}  />
       <Container style={{ marginTop: 30 }}>
       <Link
               to="/Lesson"
